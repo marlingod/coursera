@@ -1,0 +1,11 @@
+# Notes from Hyperparameter tunning of the class
+high variances:
+ - L2 regularisation: prevent overfitting. By assigning a high value to the lambda, the W matrix become very small thus elimiating that node
+ - Dropout regularisation: at each layer set up the probability to remove some nodes in the layer
+   - Inverted dropout 
+   Intution: Cant rely on any one feature, so have to spread out weights
+
+python app.py -i "images/sign.jpg" \
+-t "TEXT" -m \
+"/home/workspace/models/text-detection-0004.xml" \
+-c "/opt/intel/openvino/deployment_tools/inference_engine/lib/intel64/libcpu_extension_sse4.so"
